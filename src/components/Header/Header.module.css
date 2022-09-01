@@ -24,6 +24,9 @@
   padding: 10px 20px;
 }
 
+.header .add-icon{
+  border: 1px solid red;
+}
 .header button:hover {
     cursor: pointer;
     opacity: 0.7;
