@@ -3,8 +3,8 @@ import Story from './Story';
 import styles from './StoryList.module.css';
 
 const StoryList = () => {
+  console.log('loremmm');
   const [stories, setStories] = useState([]);
-
   useEffect(() => {
     const fetchStories = async () => {
       const response = await fetch(

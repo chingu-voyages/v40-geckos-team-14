@@ -15,10 +15,9 @@ function App() {
       <Routes>
         <Route
           path="/"
-          index
           element={
-            <PrivateRoute>
-              <Home user={isUser} />
+            <PrivateRoute  user={isUser}>
+              <Home />
             </PrivateRoute>
           }
         />
