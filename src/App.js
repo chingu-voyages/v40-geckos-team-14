@@ -1,45 +1,29 @@
-import { Fragment, useState, useEffect } from 'react';
-
-import "./App.css";
-import StoryList from "./components/Story/StoryList"
-
-
+import './App.css';
 import Header from './components/Header/Header';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home/Home';
+import AddStory from './Pages/AddStory/AddStory';
+import PrivateRoute from './Pages/Authentication/PrivateRoute';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function App() {
-  const [stories, setStories] = useState([]);
-
-  useEffect(() => {
-    const fetchStories = async () => {
-      const response = await fetch("https://weave-story-default-rtdb.firebaseio.com/story.json");
-
-      if (!response.ok) {
-        throw new Error("Something went wrong");
-      }
-
-      const data = await response.json();
-      const loadedStories = [];
-      for (const key in data) {
-        loadedStories.push({
-          id: key,
-          username: data[key].username,
-          title: data[key].title,
-          date: data[key].date,
-          src: data[key].src
-        });
-      };
-
-      setStories(loadedStories);
-    }
-
-    fetchStories();
-  }, [])
-  
+  const { isAuthenticated, user } = useAuth0();
+  const isUser = isAuthenticated && user;
   return (
-    <Fragment>
+    <>
       <Header />
-      <StoryList stories={stories} />
-    </Fragment>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PrivateRoute  user={isUser}>
+              <Home />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/add-story" element={<AddStory />} />
+      </Routes>
+    </>
   );
 }
 

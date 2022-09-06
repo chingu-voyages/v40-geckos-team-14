@@ -1,3 +1,7 @@
+:root{
+  --pry-blue:#5c68d7
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +10,27 @@
 
 body {
   background-color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+   font-family: "Urbanist", sans-serif;
+}
+.btn {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: #00d4ff;
+  border-radius: 4rem;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+
 }
