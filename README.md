@@ -1,14 +1,66 @@
-# voyage-tasks
+# WeaveStory
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+## Overview
+Weave story is a web application that allows users to upload their personal stories/experiences and other users can see these stories, like them and make comments on them. How cool is that 😇
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+## Features
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+- Upload user experiences
+- View other users experiences
+- Login/Sign up
 
-> Own it & Make it your Own!
+## Running this project locally
+
+To run this project locally, you have to follow these steps below;
+
+Clone the repo
+
+```
+git clone https://github.com/Aahil13/v40-geckos-team-14.git
+```
+
+install react
+
+```
+npx create-react-app appname
+```
+
+install the following dependencies
+
+```
+npm i react-browser-router
+
+npm install @auth0/auth0-react
+
+npm install react-icons --save
+```
+
+start the app
+
+```
+npm start
+```
+
+## Dev dependencies
+
+- React-DOM
+- React
+- Auth0
+
+## ToDo List
+
+This project will include the following features
+
+- [ ] Add Profile to users 
+- [ ] Check negative/abusive words
+- [ ] Bookmark story
+- [ ] Adding user comments 
+- [ ] Comment on user stories
+- [ ] Edit user experiences
+
+
+
+
+
+
+
