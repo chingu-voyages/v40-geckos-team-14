@@ -5,9 +5,9 @@ Weave story is a web application that allows users to upload their personal stor
 
 ## Features
 
-- [] Upload user experiences
-- [] View other users experiences
-- [] Login/Sign up
+- Upload user experiences
+- View other users experiences
+- Login/Sign up
 
 ## Running this project locally
 
@@ -43,20 +43,20 @@ npm start
 
 ## Dev dependencies
 
-- [] React-DOM
-- [] React
-- [] Auth0
+- React-DOM
+- React
+- Auth0
 
 ## ToDo List
 
 This project will include the following features
 
-- [x] Add Profile to users 
-- [x] Check negative/abusive words
-- [x] Bookmark story
-- [x] Adding user comments 
-- [x] Comment on user stories
-- [x] Edit user experiences
+- [ ] Add Profile to users 
+- [ ] Check negative/abusive words
+- [ ] Bookmark story
+- [ ] Adding user comments 
+- [ ] Comment on user stories
+- [ ] Edit user experiences
 
 
 
